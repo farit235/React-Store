@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -29,6 +33,27 @@ body {
 .menu {
   margin-right: 30px;
   color: aliceblue;
+  display: flex;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:hover {
+  color: lightgoldenrodyellow;
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 65px;
+  right: 30px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 31px 0px rgba(34, 60, 80, 0.3);
+  min-height: 100px;
+  background: gray;
+  z-index: 1000;
 }
 
 header .logo {
