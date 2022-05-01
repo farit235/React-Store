@@ -33,19 +33,25 @@ class App extends React.Component {
           price: "799",
         },
       ],
+      orders: [],
     };
+    this.addToOrder = this.addToOrder.bind(this);
   }
   render() {
     return (
       <div className="wrapper">
-        <Header />
+        <Header orders={this.state.orders} />
         <div className="header-items">
           <h2>Choose your iPhone</h2>
         </div>
-        <Items items={this.state.items} />
+        <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
       </div>
     );
+  }
+
+  addToOrder(item) {
+    this.setState({ orders: [...this.state.orders, item] });
   }
 }
 

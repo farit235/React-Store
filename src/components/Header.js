@@ -1,6 +1,25 @@
 import React, { useState } from "react";
+import Order from "./Order";
 
-export default function Header() {
+const showOrders = (props) => {
+  return (
+    <div>
+      {props.orders.map((el) => (
+        <Order key={el.id} item={el} />
+      ))}
+    </div>
+  );
+};
+
+const showNothing = () => {
+  return (
+    <div className="empty">
+      <h3>No items in cart</h3>
+    </div>
+  );
+};
+
+export default function Header(props) {
   let [cartOpen, setCartOpen] = useState(false);
 
   return (
@@ -20,7 +39,11 @@ export default function Header() {
             </div>
             {/* <img src="./images/cart.png" alt="cart icon" /> */}
           </div>
-          {cartOpen && <div className="shop-cart"></div>}
+          {cartOpen && (
+            <div className="shop-cart">
+              {props.orders.length > 0 ? showOrders(props) : showNothing()}
+            </div>
+          )}
           <ul className="nav">
             <li>iPhones</li>
             <li>iPad</li>
