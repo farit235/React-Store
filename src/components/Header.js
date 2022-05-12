@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import Order from "./Order";
 
 const showOrders = (props) => {
+  let total = 0;
+  props.orders.forEach((element) => {
+    total += Number.parseFloat(element.price);
+    return total;
+  });
+
   return (
     <div>
       {props.orders.map((el) => (
-        <Order key={el.id} item={el} />
+        <Order key={el.id} item={el} onDelete={props.onDelete} />
       ))}
+      <p className="total-price">
+        Total: {new Intl.NumberFormat().format(total)}$
+      </p>
     </div>
   );
 };
@@ -28,6 +37,7 @@ export default function Header(props) {
         <div className="logo">
           <h1>Apple World</h1>
         </div>
+        <div>{/* <Menu /> */}</div>
         <div className="menu">
           <div className="to-cart">
             <div
@@ -44,11 +54,12 @@ export default function Header(props) {
               {props.orders.length > 0 ? showOrders(props) : showNothing()}
             </div>
           )}
+
           <ul className="nav">
-            <li>iPhones</li>
+            <li>iPhone</li>
             <li>iPad</li>
             <li>Mac</li>
-            <li>About Us</li>
+            <li>about</li>
           </ul>
         </div>
       </div>
