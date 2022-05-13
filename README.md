@@ -1,3 +1,5 @@
+Данный проект - приятный магазин техники Apple, в котором очень удобный интерфейс, без каких-либо непоняток :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
