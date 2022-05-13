@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Layout from "../pages/Layout";
 import Order from "./Order";
 
 const showOrders = (props) => {
@@ -37,7 +38,10 @@ export default function Header(props) {
         <div className="logo">
           <h1>Apple World</h1>
         </div>
-        <div>{/* <Menu /> */}</div>
+        <div>
+          {/* <img src="" alt="" /> */}
+          {/* <Menu /> */}
+        </div>
         <div className="menu">
           <div className="to-cart">
             <div
@@ -55,12 +59,15 @@ export default function Header(props) {
             </div>
           )}
 
-          <ul className="nav">
+          {/* <ul className="nav">
             <li>iPhone</li>
             <li>iPad</li>
             <li>Mac</li>
-            <li>about</li>
-          </ul>
+            <li>
+              <a href="/about">about</a>
+            </li>
+          </ul> */}
+          <Layout />
         </div>
       </div>
       <div className="presentation"></div>

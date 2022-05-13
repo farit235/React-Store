@@ -99,6 +99,10 @@ header .shop-cart .item p {
   font-weight: 600;
 }
 
+header .shop-cart .item .disc {
+  margin-left: 30px;
+}
+
 header .logo {
   margin-left: 30px;
   font-weight: 600;
@@ -122,16 +126,33 @@ header ul.nav li:hover {
   opacity: 0.5;
 }
 
-header .presentation {
-  background: url("./images/iphone_13.jpg") no-repeat;
+/* header .presentation {
+  background: url("./img/iphone_13.jpg") no-repeat;
   width: 100%;
   height: 500px;
   background-size: cover;
   background-position: center center;
   position: relative;
+} */
+
+header .presentation img {
+  width: 100%;
+  height: 670px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
-header .presentation::after {
+header .presentation .text {
+  position: absolute;
+  top: 80px;
+  left: 600px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* header .presentation::after {
   content: "iPhone 13 Pro Max";
   position: absolute;
   top: 50px;
@@ -139,9 +160,9 @@ header .presentation::after {
   width: 500px;
   font-size: 40px;
   font-weight: 600;
-}
+} */
 
-header .presentation::before {
+/* header .presentation::before {
   content: "Better than you";
   position: absolute;
   top: 100px;
@@ -149,11 +170,11 @@ header .presentation::before {
   width: 500px;
   font-size: 24px;
   font-weight: 600;
-}
+} */
 
 .header-items {
-  margin-top: 40px;
   text-align: center;
+  font-size: 30px;
 }
 
 .categories {
@@ -177,7 +198,7 @@ main {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 50px 50px;
+  margin: 50px auto;
 }
 
 main .item {
@@ -231,6 +252,37 @@ main .add-to-cart:hover {
 }
 
 footer {
+  font-size: 13px;
   text-align: center;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+footer .bottom-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 0 10px;
+  border-right: 1px solid #222;
+  cursor: pointer;
+}
+
+footer ul li:last-child {
+  border-right: 1px solid #fff;
+}
+
+footer .line {
+  width: 75%;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  margin: 15px auto;
 }
