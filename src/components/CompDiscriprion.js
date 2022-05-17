@@ -8,7 +8,6 @@ export default function CompDiscriprion(props) {
         image="./images/support.jpeg"
         text="Contact Us"
         disc="We're ready to help you."
-        device="Tell us your problem"
       />
     </div>
   );
