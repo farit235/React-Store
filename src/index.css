@@ -146,7 +146,8 @@ header .presentation img {
 header .presentation .text {
   position: absolute;
   top: 80px;
-  left: 600px;
+  left: 50%;
+  margin-left: -10%;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -392,4 +393,51 @@ textarea {
     rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
     rgba(44, 187, 99, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
+}
+
+/* intros */
+.intro-home {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 1px;
+}
+
+.shop-now {
+  color: #0266cc;
+}
+
+.shop-now:hover {
+  text-decoration: underline;
+}
+
+.intro-home p {
+  text-align: center;
+}
+.intro-home a {
+  text-decoration: none;
+}
+
+.intro-home a:hover {
+  cursor: pointer;
+}
+
+.intro-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .intro-image {
+    width: 330px;
+  }
+}
+
+.intro-subtext {
+  font-size: 25px;
 }

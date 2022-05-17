@@ -38,10 +38,7 @@ export default function Header(props) {
         <div className="logo">
           <h1>Apple World</h1>
         </div>
-        <div>
-          {/* <img src="" alt="" /> */}
-          {/* <Menu /> */}
-        </div>
+        <div>{/* <Menu /> */}</div>
         <div className="menu">
           <div className="to-cart">
             <div
