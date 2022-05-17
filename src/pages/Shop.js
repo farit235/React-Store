@@ -99,7 +99,7 @@ export default class Shop extends Component {
           image="./images/stuff.jpeg"
           text="Store"
           disc="Find you thing."
-          device="product"
+          device="Choose your product"
         />
         <Categories chooseCategory={this.chooseCategory} />
         <Items items={this.state.currentItems} onAdd={this.addToOrder} />

@@ -10,7 +10,7 @@ export default function Ipad() {
         image="./images/ipad-intro.jpeg"
         text="iPad"
         disc="More Power"
-        device="iPad"
+        device="Choose your iPad"
       />
     </header>
   );

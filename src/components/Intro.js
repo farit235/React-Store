@@ -9,7 +9,7 @@ export default function Intro(props) {
         <h4>{props.disc}</h4>
       </div>
       <div className="header-items">
-        <h2>Choose your {props.device}</h2>
+        <h2>{props.device}</h2>
       </div>
     </div>
   );

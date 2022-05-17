@@ -10,7 +10,7 @@ export default function Mac() {
         image="./images/mac-intro.png"
         text="Mac"
         disc="Power Behind You."
-        device="Mac"
+        device="Choose your Mac"
       />
     </header>
   );

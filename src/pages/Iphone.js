@@ -12,7 +12,7 @@ export default function Iphone() {
         image="./images/iphone-intro.png"
         text="iPhone"
         disc="Best ever."
-        device="iPhone"
+        device="Choose your iPhone"
       />
     </header>
   );

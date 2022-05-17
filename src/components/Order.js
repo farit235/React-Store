@@ -10,7 +10,7 @@ export class Order extends Component {
         <b>
           <img
             className="delete-icon"
-            src="/Users/farit_sib/Documents/Лабы МИЭТА/Лабы МИЭТА/Лабы Web-пограммирование/apple-store/src/images/delete-icon.png"
+            src="./images/delete-icon.png"
             alt="del-icon"
             onClick={() => this.props.onDelete(this.props.item.id)}
           />
