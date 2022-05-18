@@ -8,7 +8,7 @@ export default function IntroHome(props) {
       <p className="intro-price">{props.price}</p>
       <p>
         <a href="#" className="shop-now">
-          Learn more
+          {props.button}
         </a>
       </p>
       <img src={props.image} alt={props.alt} className="intro-image" />

@@ -1,17 +1,19 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Intro from "../components/Intro";
+import IntroHome from "../components/IntroHome";
 
 export default function Mac() {
   return (
     <header>
       <Header />
-      <Intro
-        image="./images/mac-intro.png"
-        text="Mac"
-        disc="Power Behind You."
-        device="Choose your Mac"
+      <IntroHome
+        name="Mac"
+        image="./images/intro_mac.jpeg"
+        alt="Mac image"
+        text="Power Behind You."
       />
+      <Footer />
     </header>
   );
 }

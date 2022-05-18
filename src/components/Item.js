@@ -5,7 +5,7 @@ export class Item extends Component {
     return (
       <div className="item">
         <div>
-          <img src={"./images/" + this.props.item.img} />
+          <img src={"./images/" + this.props.item.img} alt="img item" />
         </div>
         <div className="info">
           <h2>{this.props.item.title}</h2>

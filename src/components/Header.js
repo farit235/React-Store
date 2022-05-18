@@ -35,27 +35,11 @@ export default function Header(props) {
   return (
     <header className="header">
       <div className="lmn">
-        <div className="logo">
+        {/* <div className="logo">
           <h1>Apple World</h1>
-        </div>
-        <div>{/* <Menu /> */}</div>
-        <div className="menu">
-          <div className="to-cart">
-            <div
-              onClick={() => setCartOpen((cartOpen = !cartOpen))}
-              className="cart"
-            >
-              {" "}
-              Cart{" "}
-            </div>
-            {/* <img src="./images/cart.png" alt="cart icon" /> */}
-          </div>
-          {cartOpen && (
-            <div className="shop-cart">
-              {props.orders.length > 0 ? showOrders(props) : showNothing()}
-            </div>
-          )}
+        </div> */}
 
+        <div className="menu">
           {/* <ul className="nav">
             <li>iPhone</li>
             <li>iPad</li>
@@ -65,6 +49,19 @@ export default function Header(props) {
             </li>
           </ul> */}
           <Layout />
+          <div className="to-cart">
+            <div
+              onClick={() => setCartOpen((cartOpen = !cartOpen))}
+              className="cart"
+            >
+              <img src="./images/cart.png" alt="cart icon" width="30px" />
+            </div>
+          </div>
+          {cartOpen && (
+            <div className="shop-cart">
+              {props.orders.length > 0 ? showOrders(props) : showNothing()}
+            </div>
+          )}
         </div>
       </div>
       <div className="presentation"></div>

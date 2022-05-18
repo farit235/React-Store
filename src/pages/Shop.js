@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Categories from "../components/Categories";
 import Items from "../components/Items";
 import Footer from "../components/Footer";
-import Intro from "../components/Intro";
+import IntroHome from "../components/IntroHome";
 
 export default class Shop extends Component {
   constructor(props) {
@@ -95,11 +95,11 @@ export default class Shop extends Component {
     return (
       <header className="wrapper">
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
-        <Intro
+        <IntroHome
+          name="Store"
           image="./images/stuff.jpeg"
-          text="Store"
-          disc="Find you thing."
-          device="Choose your product"
+          alt="store image"
+          text="Find you thing."
         />
         <Categories chooseCategory={this.chooseCategory} />
         <Items items={this.state.currentItems} onAdd={this.addToOrder} />
