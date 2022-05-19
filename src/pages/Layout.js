@@ -63,6 +63,14 @@ const Layout = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              to="/news"
+              style={{ textDecoration: "none", color: "aliceblue" }}
+            >
+              News
+            </Link>
+          </li>
         </ul>
       </nav>
 

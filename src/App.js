@@ -1,17 +1,13 @@
 import React from "react";
 // import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Iphone from "./pages/Iphone";
 import Mac from "./pages/Mac";
 import Ipad from "./pages/Ipad";
 import Shop from "./pages/Shop";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Items from "./components/Items";
-import Categories from "./components/Categories";
+import News from "./pages/News";
 
 class App extends React.Component {
   // constructor(props) {
@@ -118,6 +114,7 @@ class App extends React.Component {
           <Route path="mac" element={<Mac />} />
           <Route path="ipad" element={<Ipad />} />
           <Route path="shop" element={<Shop />} />
+          <Route path="news" element={<News />} />
         </Routes>
       </BrowserRouter>
     );
