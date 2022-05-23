@@ -2,9 +2,15 @@ import React from "react";
 
 export default function Video(props) {
   return (
-    <div className="video-comp">
-      <h2>{props.title}</h2>
-      <div className="video">{props.video}</div>
-    </div>
+    <iframe
+      className="video"
+      width={props.info.width}
+      height={props.info.height}
+      src={props.info.src}
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   );
 }
