@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntroHome from "../components/IntroHome";
 import VideoContainer from "../components/VideoContainer";
+import DiscriptionContainerIPH from "../components/DiscriptionContainerIPH";
 
 export default function Iphone() {
   const video = {
@@ -21,7 +22,7 @@ export default function Iphone() {
       <Header />
       <IntroHome
         name="iPhone"
-        image="./images/intro_iphone.jpeg"
+        image="./images/intro-iphone.jpeg"
         alt="iPhone image"
         text="Best ever."
       />
@@ -31,6 +32,8 @@ export default function Iphone() {
         button={video.button}
         video={video.video}
       />
+
+      <DiscriptionContainerIPH />
       <Footer />
     </header>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import DiscriptionContainerIPD from "../components/DiscriptionContainerIPD";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntroHome from "../components/IntroHome";
@@ -30,6 +31,7 @@ export default function Ipad() {
         button={video.button}
         video={video.video}
       />
+      <DiscriptionContainerIPD />
       <Footer />
     </header>
   );

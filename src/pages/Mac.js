@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntroHome from "../components/IntroHome";
 import VideoContainer from "../components/VideoContainer";
+import AppsContainerBox from "../components/AppsContainerBox";
+import DiscriptionContainer from "../components/DiscriptionContainer";
 
 export default function Mac() {
   const video = {
@@ -30,6 +32,9 @@ export default function Mac() {
         button={video.button}
         video={video.video}
       />
+      <DiscriptionContainer />
+      <AppsContainerBox />
+
       <Footer />
     </header>
   );
