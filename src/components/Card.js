@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Card(props) {
+export default function Card() {
   return (
-    <body className="align">
+    <div className="align">
       <div className="grid-align-item">
         <h2>Enter your payment information below</h2>
 
@@ -17,7 +17,7 @@ export default function Card(props) {
                 />
               </header>
               <div className="card-number form-field">
-                <label for="card-number" className="card-number-label">
+                <label htmlFor="card-number" className="card-number-label">
                   Card Number
                 </label>
                 <input
@@ -31,7 +31,7 @@ export default function Card(props) {
               </div>
 
               <div className="card-expiration form-field">
-                <label for="card-expiration-year">Expiration</label>
+                <label htmlFor="card-expiration-year">Expiration</label>
                 <select name="" id="card-expiration-year" required>
                   <option value="january">January</option>
                   <option value="februrary">Februrary</option>
@@ -56,7 +56,7 @@ export default function Card(props) {
               </div>
 
               <div className="card-ccv form-field">
-                <label for="">CVV</label>
+                <label htmlFor="">CVV</label>
                 <input
                   type="text"
                   className="card-cvv-input"
@@ -65,9 +65,6 @@ export default function Card(props) {
                   required
                 />
               </div>
-              <div className="total">
-                <h3>Total: {props.total}$</h3>
-              </div>
             </div>
             <button className="card-button" type="submit">
               Submit
@@ -75,6 +72,6 @@ export default function Card(props) {
           </form>
         </div>
       </div>
-    </body>
+    </div>
   );
 }

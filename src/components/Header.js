@@ -5,18 +5,26 @@ import { Link } from "react-router-dom";
 
 const showOrders = (props) => {
   let total = 0;
+  let allItems = [];
+  let myItems = {};
+
   props.orders.forEach((element) => {
     total += Number.parseFloat(element.price);
-    return total;
+    allItems.push(element);
+    return total, allItems;
   });
 
-  window.sessionStorage.setItem("total", total);
+  myItems.itms = allItems;
+
+  // window.sessionStorage.setItem("total", total);
+  window.sessionStorage.setItem("item", JSON.stringify(myItems));
 
   return (
     <div>
       {props.orders.map((el) => (
         <Order key={el.id} item={el} onDelete={props.onDelete} />
       ))}
+
       <p className="total-price">
         Total: {new Intl.NumberFormat().format(total)}$
         <span>
