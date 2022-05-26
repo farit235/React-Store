@@ -8,6 +8,7 @@ import Mac from "./pages/Mac";
 import Ipad from "./pages/Ipad";
 import Shop from "./pages/Shop";
 import News from "./pages/News";
+import Buy from "./pages/Buy";
 
 class App extends React.Component {
   // constructor(props) {
@@ -115,6 +116,7 @@ class App extends React.Component {
           <Route path="ipad" element={<Ipad />} />
           <Route path="shop" element={<Shop />} />
           <Route path="news" element={<News />} />
+          <Route path="shop/buy" element={<Buy />} />
         </Routes>
       </BrowserRouter>
     );

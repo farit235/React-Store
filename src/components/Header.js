@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../pages/Layout";
 import Order from "./Order";
+import { Link } from "react-router-dom";
 
 const showOrders = (props) => {
   let total = 0;
@@ -9,6 +10,8 @@ const showOrders = (props) => {
     return total;
   });
 
+  window.sessionStorage.setItem("total", total);
+
   return (
     <div>
       {props.orders.map((el) => (
@@ -16,6 +19,11 @@ const showOrders = (props) => {
       ))}
       <p className="total-price">
         Total: {new Intl.NumberFormat().format(total)}$
+        <span>
+          <Link to="/shop/buy" style={{ textDecoration: "none" }}>
+            <button className="card-button">Buy</button>
+          </Link>
+        </span>
       </p>
     </div>
   );
@@ -35,26 +43,14 @@ export default function Header(props) {
   return (
     <header className="header">
       <div className="lmn">
-        {/* <div className="logo">
-          <h1>Apple World</h1>
-        </div> */}
-
         <div className="menu">
-          {/* <ul className="nav">
-            <li>iPhone</li>
-            <li>iPad</li>
-            <li>Mac</li>
-            <li>
-              <a href="/about">about</a>
-            </li>
-          </ul> */}
           <Layout />
           <div className="to-cart">
             <div
               onClick={() => setCartOpen((cartOpen = !cartOpen))}
               className="cart"
             >
-              <img src="./images/cart.png" alt="cart icon" width="30px" />
+              <img src="../images/cart.png" alt="cart icon" width="30px" />
             </div>
           </div>
           {cartOpen && (

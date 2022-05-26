@@ -16,7 +16,7 @@ const Layout = () => {
               }}
             >
               <img
-                src="./images/apple-logo.png"
+                src="../images/apple-logo.png"
                 alt="apple-logo"
                 width="50px"
               />
