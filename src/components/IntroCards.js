@@ -10,6 +10,7 @@ export default function IntroCards() {
         alt="Apple Card image"
         text="Get up to 3% Daily Cash Back with every purchase."
         button="Learn more >"
+        link="/contact"
       />
       <IntroHome
         name="Studio Display"
@@ -17,6 +18,7 @@ export default function IntroCards() {
         alt="Apple Studio Display image"
         text="A sight to be bold."
         button="Learn more >"
+        link="/mac"
       />
       <IntroHome
         name="Enjoy great savings."
@@ -24,6 +26,7 @@ export default function IntroCards() {
         alt="Apple Shop image"
         text="Benefit from incredibly saving."
         button="Shop now >"
+        link="/shop"
       />
       <IntroHome
         name="iPad Air."
@@ -31,6 +34,7 @@ export default function IntroCards() {
         alt="Apple iPad image"
         text="Light. Bright. Full of might."
         button="Learn more >"
+        link="/ipad"
       />
     </div>
   );

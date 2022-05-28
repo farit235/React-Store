@@ -34,7 +34,6 @@ export default function Mac() {
       />
       <DiscriptionContainer />
       <AppsContainerBox />
-
       <Footer />
     </header>
   );

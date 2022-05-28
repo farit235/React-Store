@@ -8,9 +8,17 @@ export default function IntroHome(props) {
       <p className="intro-subtext">{props.text}</p>
       <p className="intro-price">{props.price}</p>
       <p>
-        <a href="#" className="shop-now">
-          {props.button}
-        </a>
+        <Link
+          to={{
+            pathname: props.link,
+            state: {
+              someStateValue: 1,
+            },
+          }}
+          style={{ textDecoration: "none" }}
+        >
+          <span className="shop-now">{props.button}</span>
+        </Link>
       </p>
       <img src={props.image} alt={props.alt} className="intro-image" />
     </div>

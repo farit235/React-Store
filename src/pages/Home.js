@@ -15,6 +15,7 @@ export default function Home() {
         text="Oh. So. Pro."
         price="From $24.95/mo. or $599 with trade-in."
         button="Learn more >"
+        link="/iphone"
       />
       <IntroHome
         name="iPhone SE"
@@ -23,6 +24,7 @@ export default function Home() {
         text="Love the power. Love the price."
         price="From $14.95/mo. or $299 with trade-in."
         button="Learn more >"
+        link="/iphone"
       />
       <IntroHome
         name="Watch Series 7"
@@ -31,6 +33,7 @@ export default function Home() {
         text="It's our largest display yet."
         price="From $14.95/mo. or $199 with trade-in."
         button="Learn more >"
+        link="/shop"
       />
       <IntroCards />
       <Footer />
