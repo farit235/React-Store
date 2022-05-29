@@ -1,16 +1,19 @@
 import React from "react";
 import { createField, FieldType } from "@altiore/form";
+import { FieldCheckbox } from './FieldCheckbox';
 
-function Field({ name, error, type, isInvalid }) {
+function Field({ fieldProps: {isInvalid, error}, inputProps, label }) {
   return (
-    <>
-      <input name={name} type={type} required />
-      {isInvalid && <span>{error}</span>}
-    </>
+    <label htmlFor={inputProps.name + '-id'}>
+      <span className="input-hint">{label}</span>
+      <input id={inputProps.name + '-id'} {...inputProps} required />
+      {isInvalid && <span className="input-error">{error}</span>}
+    </label>
   );
 }
 
 export default {
-  String: createField(FieldType.EMAIL, Field),
-  String: createField(FieldType.TEXT, Field),
+  Bool: createField(FieldType.BOOLEAN, FieldCheckbox),
+  Email: createField(FieldType.EMAIL, Field),
+  Text: createField(FieldType.TEXT, Field),
 };
