@@ -330,6 +330,10 @@ label {
   padding-left: 5px;
 }
 
+label > .input-error {
+  color: red;
+}
+
 .container-form .checkbox {
   display: flex;
   flex-direction: row;
@@ -712,7 +716,7 @@ textarea {
 }
 
 /* .s-discription:hover {
-  
+
   transition: 0.4s;
 } */
 
