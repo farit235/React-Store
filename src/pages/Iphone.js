@@ -32,7 +32,6 @@ export default function Iphone() {
         button={video.button}
         video={video.video}
       />
-
       <DiscriptionContainerIPH />
       <Footer />
     </header>
