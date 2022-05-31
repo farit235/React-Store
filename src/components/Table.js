@@ -36,6 +36,7 @@ export default function Table(props) {
           ))}
         </tbody>
       </table>
+
       <div className="total">
         <h3>Total: {allPrice}$</h3>
       </div>
