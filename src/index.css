@@ -892,3 +892,94 @@ tr:hover td {
 .total {
   text-align: center;
 }
+
+/* adaptive version */
+@media screen and (min-width: 650px) {
+  .home-intro-cards-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .lmn .menu .shop-cart {
+    width: 250px;
+  }
+
+  .lmn {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .intro-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-cards .intro-home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-intro-cards-mobile {
+    display: block;
+  }
+
+  .home-intro-cards {
+    display: none;
+  }
+
+  .menu .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .main-categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-categories .item {
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  header .video-container main div {
+    width: 100%;
+  }
+
+  .disc-container .discription {
+    margin: 25px;
+    width: 100%;
+  }
+
+  main p {
+    margin: 0;
+  }
+
+  .disc-container .discription h1 {
+    font-size: 35px;
+  }
+  .disc-container .discription {
+    font-size: 18px;
+  }
+
+  .disc-container .s-discription {
+    width: 100%;
+    margin: 40px 20px;
+    font-size: 18px;
+  }
+
+  .img-block {
+    max-width: 300px;
+  }
+
+  .news-block {
+    display: block;
+    margin: 20px;
+  }
+}
