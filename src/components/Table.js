@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Card from "./Card";
 import TableRow from "./TableRow";
 
 export default function Table(props) {
@@ -17,6 +18,21 @@ export default function Table(props) {
   };
 
   let allPrice = priceAll();
+
+  var params = new URLSearchParams();
+  params.set("Products", products);
+  params.set("Total", allPrice);
+
+  function clickHandler() {
+    fetch("http://localhost:8888/Lab8/", {
+      method: "POST",
+      header: { "Content-Type": "application/form" },
+      body: params,
+    }).then((response) => {
+      console.log("Complete");
+      alert("Form sent, we'll call you back later :))");
+    });
+  }
 
   return (
     <div className="table">
@@ -39,6 +55,7 @@ export default function Table(props) {
       <div className="total">
         <h3>Total: {allPrice}$</h3>
       </div>
+      <Card clickHandler={clickHandler} />
     </div>
   );
 }

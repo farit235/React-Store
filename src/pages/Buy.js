@@ -26,8 +26,8 @@ export default function Buy() {
   return (
     <header>
       <Header />
+      {/* Card in Table */}
       <Table arr={arr2} />
-      <Card />
       <Footer />
     </header>
   );

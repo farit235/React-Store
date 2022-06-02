@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="align">
       <div className="grid-align-item">
@@ -66,7 +66,11 @@ export default function Card() {
                 />
               </div>
             </div>
-            <button className="card-button" type="submit">
+            <button
+              className="card-button"
+              type="submit"
+              onClick={props.clickHandler}
+            >
               Submit
             </button>
           </form>
