@@ -25,6 +25,7 @@ export default function Table(props) {
 
   function clickHandler() {
     fetch("https://form-php-app.herokuapp.com", {
+      mode: "no-cors",
       method: "POST",
       header: { "Content-Type": "application/form" },
       body: params,
