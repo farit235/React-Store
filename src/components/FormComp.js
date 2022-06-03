@@ -52,7 +52,7 @@ export default function FormComp(props) {
 
   // https://form-php-snowy.vercel.app
   function clickHandler() {
-    fetch("https://form-php-snowy.vercel.app", {
+    fetch("https://form-php-app.herokuapp.com", {
       mode: "no-cors",
       method: "POST",
       header: { "Content-Type": "application/form" },
