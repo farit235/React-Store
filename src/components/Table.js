@@ -24,7 +24,7 @@ export default function Table(props) {
   params.set("Total", allPrice);
 
   function clickHandler() {
-    fetch("http://localhost:8888/Lab8/", {
+    fetch("https://form-php-app.herokuapp.com", {
       method: "POST",
       header: { "Content-Type": "application/form" },
       body: params,

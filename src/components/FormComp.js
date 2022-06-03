@@ -50,7 +50,6 @@ export default function FormComp(props) {
   params.set("Phone", phone);
   params.set("Message", text);
 
-  // https://form-php-snowy.vercel.app
   function clickHandler() {
     fetch("https://form-php-app.herokuapp.com", {
       mode: "no-cors",
