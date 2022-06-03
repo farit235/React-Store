@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Card(props) {
   return (
@@ -66,13 +67,15 @@ export default function Card(props) {
                 />
               </div>
             </div>
-            <button
-              className="card-button"
-              type="submit"
-              onClick={props.clickHandler}
-            >
-              Submit
-            </button>
+            <Link to="/">
+              <button
+                className="card-button"
+                type="submit"
+                onClick={props.clickHandler}
+              >
+                Submit
+              </button>
+            </Link>
           </form>
         </div>
       </div>
